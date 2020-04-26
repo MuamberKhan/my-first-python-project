@@ -1,5 +1,5 @@
 import requests
-'''
+
 import math
 import os
 import sys as system
@@ -14,8 +14,9 @@ def Great(who_to_great):
 # print(Great("World"))
 # print(Great("Muamber"))
 r = requests.get("https://www.facebook.com")
-print(r)
-'''
+print(r.status_code)
+print(r.ok)
+
 
 name=input("Please enter your name! ")
 print("Hello,",name)
